@@ -8,16 +8,8 @@ class Pet extends Model
 {
     protected $fillable = [];
 
-    public function hasMany() {
-
-    }
-
-    public function belongsTo() {
-        
-    }
-
-    public function hasOne() {
-        
+    public function owner() {
+           return $this->belongsTo('App\Owner','owner_id', 'id');
     }
 
 

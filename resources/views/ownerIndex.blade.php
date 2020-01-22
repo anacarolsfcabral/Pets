@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Revisão Laravel</title>
+    <title>Document</title>
 </head>
 <body>
-       
 
-            @foreach($pets as $pet)
-                <h3>{{$pet['name']}}</h3>
-            @endforeach
+        @foreach($owners as $owner)
+        <h3>{{$owner['name']}}</h3>
+    @endforeach
 
-        
+    
 </body>
 </html>

@@ -7,12 +7,9 @@ use Illuminate\Http\Request;
 class PetsController extends Controller
 {
     public function index() {
-        $pets = [
-            'Vintém',
-            'Agata',
-            'Gaspar',
-            'Duque',
-        ];
+
+        $pets = \App\Pet::all();
+
 
         return view('petIndex',compact('pets'));
     }
